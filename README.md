@@ -1,3 +1,5 @@
-Salamo 3alaykom
+# بسم الله الرحمان الرحيم و الصلاة و السلام على رسول الله صلى الله عليه و سلم
+ # السلام عليكم و رحمة الله تعالى و بركاته 
+ # أسأل الله لنا و لكم التوفيق و لا تنسونا من صالح الدعاء
 
-this repository contains many useful tips  :)
+## this repository contains many useful tips  :)
