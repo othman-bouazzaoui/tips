@@ -114,3 +114,35 @@ vous pouvez aussi tapper git config --globale --edit pour modifier tous les alia
 
 - : check which files are committed :
      - git diff-tree --no-commit-id --name-only -r <-commit_id->
+
+## git merge
+permet de merger une branche dans une autre :
+si j'ai 2 branches x et y et je veux merger x dans y, je dois me positionner sur y et j'execute : 
+- git merge x 
+
+## Git Rebase : 
+- c'est une façon de combiner les contenu de deux branches.
+- Rebase prend un ensemble de commits, les "recopie", et les ajoute en bout de chaîne à un autre endroit.
+- Exemple : si on a 2 branches a et b qui ont le même branche source x (base) et on veut que la base du a devient b bien sûr on récupère les commits ajouté dans b, donc ce qu'il faut faire c'est de se positionner sur a et executer la commande :
+* git rebase b
+
+## Squach (obtimisation des commits)
+- Exemple :
+Si on 3 commits et on souhaite les regrouper dans une seul, pour qu'il soit plus lisible, il suffit d'executer :
+* git rebase -i HEAD~3
+Puis, git va nous afficher les 3 commits, comme suite :<br>
+pcik idcommit msg commit 1
+pcik idcommit msg commit 3
+pcik idcommit msg commit 3
+
+Maintenant, je dois mettre s ou squach qui signifie squach sur les 2 dérniers, seront :
+pcik idcommit msg commit 1
+s idcommit msg commit 3
+s idcommit msg commit 3
+
+Puis, git va nous afficher une autre fenetre pour modifier le message final et fermer l'editeur par défaut, et si on regarde sur git log, on va trouver une seul commit au lieu 3 lignes.
+
+## git rebase --abort : permet d'annuler rebase
+
+
+
