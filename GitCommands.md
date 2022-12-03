@@ -126,7 +126,7 @@ si j'ai 2 branches x et y et je veux merger x dans y, je dois me positionner sur
 - Exemple : si on a 2 branches a et b qui ont le même branche source x (base) et on veut que la base du a devient b bien sûr on récupère les commits ajouté dans b, donc ce qu'il faut faire c'est de se positionner sur a et executer la commande :
 * git rebase b
 
-## Squach (obtimisation des commits)
+## Squach (optimisation des commits)
 - Exemple :
 Si on 3 commits et on souhaite les regrouper dans une seul, pour qu'il soit plus lisible, il suffit d'executer :
 * git rebase -i HEAD~3
