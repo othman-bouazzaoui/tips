@@ -35,13 +35,13 @@
 
 15: git stash save "This is a msg" -> pour ajouter un msg avec les fichiers 
 
-16: git stash apply -> pour les recupere ou cas ou je veux les supprimer ou les deployer et garder une copie dans le stash
+16: git stash apply 'stash@{index}'-> pour les recupere ou cas ou je veux les supprimer ou les deployer et garder une copie dans le stash
 
-17: git stash pop stash@{1} -> en cas plusieurs stash on donne l'id
+17: git stash pop 'stash@{index}' -> en cas plusieurs stash on donne l'id
 
-18: git stash drop stash@{0} -> supprimer
+18: git stash drop 'stash@{index}' -> supprimer
 
-19: git stash show stash@{0} -> s'il y a un dossier contient plusieurs fichiers ... on affiche le contenu
+19: git stash show 'stash@{index}' -> s'il y a un dossier contient plusieurs fichiers ... on affiche le contenu
 
 20: git stash clear -> pour supprimer tous les stash 
 
