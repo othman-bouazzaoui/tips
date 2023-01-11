@@ -144,5 +144,18 @@ Puis, git va nous afficher une autre fenetre pour modifier le message final et f
 
 ## git rebase --abort : permet d'annuler rebase
 
+## Astuce pour comparer 2 branches, puis récupérer les nombres qui compose un commit, trier d'une manière unique(avoir seul ligne), wc (compter le nombre des lignes), si on a 0 ligne en afficher 0 sinon on affiche le nombre
+num=$(git log feat/12345_add_newfeature ^develop --pretty=format:"%s" | grep -Po '\K[0-9]{4,5}' | sort -u | wc -l) && if [ $num -eq 0 ]; 
+then echo 0
+else echo $num
+fi
+
+>> ./file.sh
+#!/bin/bash  
+num=$(git log feat/12345_add_newfeature ^develop --pretty=format:"%s" | grep -Po '\K[0-9]{4,5}' | sort -u | wc -l) && if [ $num -eq 0 ]; 
+then echo 0
+else echo $num
+fi
+>>
 
 

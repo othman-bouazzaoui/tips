@@ -4,6 +4,10 @@
 ### tester la version desktop ou vous pouvez regardez aussi la version web :)
 <img src="data/useEhloWithtelnet.png" /> 
 
+docker pull rnwood/smtp4dev:v3
+
+docker run --name smtpLocal -p 25:25 -p 5001:80 -p 143:143 rnwood/smtp4dev:v3
+
 ## 2 : mailslurper
 - install it by using docker :
   docker run -it -p 2500:2500 -p 8080:8080 -p 8085:8085 --rm /docker-mailslurper
