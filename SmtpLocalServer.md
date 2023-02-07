@@ -15,4 +15,8 @@ docker run --name smtpLocal -p 25:25 -p 5001:80 -p 143:143 rnwood/smtp4dev:v3
 
 - entrer http://localhost:8080
 
+## 3 maildev
+docker run -p 1080:1080 -p 1025:1025 maildev/maildev
+https://github.com/maildev/maildev
+
 # of course exists other systems for smtp local server for developers :)

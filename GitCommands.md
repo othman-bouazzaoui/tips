@@ -102,6 +102,9 @@ vous pouvez aussi tapper git config --globale --edit pour modifier tous les alia
 	7 - ssh-keygen -t rsa -b 4096 -C "oth.bouazzaoui@gmail.com" -> pour generer un token public
 
 	8 - ssh -T git@github.com -> pour se connecter avec server github à travers le token
+  
+  9 - git config --global http.sslVerify false -> to disable SSL
+
 => branch
 
   1 - git branch NomBranch -> le nom du branch à créer
